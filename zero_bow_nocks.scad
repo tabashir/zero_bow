@@ -23,7 +23,7 @@ string_groove_vertical_offset=7.1;
 // calculated vars - should not need to alter
 bow_or=bow_od/2;
 bow_ir=bow_id/2;
-
+id_diff=bow_or-bow_ir;
 torus_or=(bow_od+string_groove_depth)/2;
 torus_ir=(bow_id-string_groove_depth)/2;
 
@@ -35,6 +35,8 @@ difference() {
     cylinder(h=nock_length, d=bow_od);
     translate([0,0,-insert_length]) cylinder(h=insert_length, d=bow_id);
     torus(bow_od/2,bow_id/2);
+    translate([0,0,-insert_length]) torus(bow_ir,bow_ir-id_diff);
+    // translate([0,0,nock_length]) torus(bow_od/2,bow_id/2);
   }
 
   translate([0,string_groove_lateral_offset,string_groove_vertical_offset]) {
