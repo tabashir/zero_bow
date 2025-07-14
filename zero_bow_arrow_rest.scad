@@ -1,6 +1,6 @@
 $fn=100;
 // outer diameter of bow at ends in mm
-bow_od=20.5;
+bow_od=21.1;
 clip_thickness=4.5;
 clip_height=18.1;
 
@@ -9,12 +9,13 @@ rest_height=18.1;
 // how far out the U sticks
 rest_width=12.1;
 // how thick the parts of the U are
-rest_thickness=7.1;
+rest_thickness=7.6;
 // how wide the rest is from the side (ie from front>back of the bow)
 rest_depth=10.1;
 // fine tune the height of the clip
-rest_vertical_adjust=2.8;
+rest_vertical_adjust=3.1;
 
+// has left and right rest on same fitting.
 double_rest=true;
 
 // calculated vars - should not need to alter
