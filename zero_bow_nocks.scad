@@ -33,7 +33,8 @@ torus_cutoff_adjust=1.25;
 difference() {
   union()  {
     cylinder(h=nock_length, d=bow_od);
-    translate([0,0,-insert_length]) cylinder(h=insert_length, d=bow_id);
+    outer_size=bow_id+(bow_od-bow_id)*0.8;
+    translate([0,0,-insert_length]) cylinder(h=insert_length, d1=bow_id, d2=outer_size);
     torus(bow_od/2,bow_id/2);
     translate([0,0,-insert_length]) torus(bow_ir,bow_ir-id_diff);
     // translate([0,0,nock_length]) torus(bow_od/2,bow_id/2);
