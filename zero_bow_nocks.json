@@ -1,0 +1,31 @@
+{
+    "fileFormatVersion": "1",
+    "parameterSets": {
+        "tighter_fit": {
+            "$fn": "100",
+            "bow_id": "20.600000000000001",
+            "bow_od": "21.800000000000001",
+            "insert_bottom_width": "18.899999999999999",
+            "insert_length": "25",
+            "nock_chamfer": "1",
+            "nock_length": "20",
+            "rib_count": "6",
+            "rib_height": "1.1000000000000001",
+            "rib_lead_in": "2",
+            "rib_width": "2.1000000000000001",
+            "string_groove_angle": "30",
+            "string_groove_depth": "4.5",
+            "string_groove_height": "5.5",
+            "string_groove_lateral_offset": "2.1000000000000001",
+            "string_groove_vertical_offset": "7.0999999999999996",
+            "torus_cutoff_adjust": "1.25",
+            "wing_angle": "270",
+            "wing_both_sides": "false",
+            "wing_enable": "true",
+            "wing_length": "33",
+            "wing_peak_percent": "70",
+            "wing_shape": "kite",
+            "wing_thickness": "4"
+        }
+    }
+}
